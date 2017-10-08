@@ -58,7 +58,7 @@ a:hover {
 /* advanced selectors*/
 
 .container {
-  width: 800px;   /* This sets the width */
+  width: 1000px;   /* This sets the width */
   margin: 0 auto; /* This automatically sets left/right margins */
 }
 
@@ -110,6 +110,10 @@ a:hover {
   padding-left: 0px;
 }
 
+.list-inline a {
+	font-size: 25px;
+}
+
 .btn-orange{
   background-color: #F96D00;
   color: white;
@@ -139,6 +143,41 @@ font-size: 20px;
   opacity: 0.5;
   color: white;
 }
+
+#sidebar {
+  background-color: #393E46;
+  position: fixed;
+  width: 100px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#sidebar li {
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+
+#sidebar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #F96D00;
+}
+
+#sidebar a:hover {
+  color: white;
+}
+
+#page-content {
+  margin-left: 100px;
+}
+
 /* mediaqueries */
 
 @media (max-width: 960px) {
@@ -158,4 +197,11 @@ font-size: 20px;
   .container {
     width: 500px;
   }
+  #page-content{
+    margin-left: 0px;
+  }
+  #sidebar {
+    display: none;
+  }
 }
+
